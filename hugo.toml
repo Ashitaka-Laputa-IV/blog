@@ -1,0 +1,40 @@
+baseURL = "https://ashitaka-laputa-iv.github.io/blog/"
+locale = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "Ashitaka 的博客"
+theme = "PaperMod"
+enableRobotsTXT = true
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  blogs = "/:year/:month/:slug/"
+
+[params]
+  description = "写点技术，写点思考。"
+  author = "Ashitaka"
+  mainSections = ["blogs"]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowToc = true
+  TocOpen = false
+  ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+
+[params.homeInfoParams]
+  Title = "你好，我是 Ashitaka"
+  Content = "记录一点想法，写给以后的自己。"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/Ashitaka-Laputa-IV"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
